@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_size"
+            android:orientation="horizontal"
+            android:id="@+id/top_control_container">
+            <ImageButton
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:background="@color/colorPrimaryDark"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/camera"
+                android:id="@+id/camera"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:layout_centerHorizontal="true">
+                <ImageButton
+                    style="@style/square_button"
+                    android:src="@drawable/arrow_up"
+                    android:id="@+id/slope_up"/>
+                <ImageButton
+                    style="@style/square_stop_button"
+                    android:src="@drawable/stop"
+                    android:id="@+id/slope_stop"/>
+
+                <ImageButton
+                   style="@style/square_button"
+                    android:src="@drawable/arrow_down"
+                    android:id="@+id/slope_down"/>
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorPrimaryDark"
+                android:src="@drawable/light"
+                android:id="@+id/light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="@dimen/button_size"
+                android:layout_height="wrap_content"
+                android:text="@string/toggle_joystick"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/textPrimaryDark"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/slope"
+                android:textColor="@color/textPrimaryDark"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="@dimen/button_size"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:textColor="@color/textPrimaryDark"
+                android:text="@string/led"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="@dimen/button_size"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/left"
+                        android:textColor="@color/textPrimaryDark" />
+
+                    <ImageButton
+                        style="@style/square_button"
+                        android:src="@drawable/arrow_up"
+                        android:id="@+id/left_up"/>
+
+                    <ImageButton
+                        style="@style/square_stop_button"
+                        android:src="@drawable/stop"
+                        android:id="@+id/left_stop"
+                        />
+
+                    <ImageButton
+                        style="@style/square_button"
+                        android:src="@drawable/arrow_down"
+                        android:id="@+id/left_down"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".8">
+
+                <io.github.controlwear.virtual.joystick.android.JoystickView
+                    xmlns:custom="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/joystick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    custom:JV_backgroundColor="@color/colorPrimary"
+                    custom:JV_borderColor="@color/textPrimaryDark"
+                    custom:JV_borderWidth="3dp"
+                    custom:JV_buttonColor="@color/cyan_700"
+                    custom:JV_buttonSizeRatio="15%"
+                    custom:JV_fixedCenter="false"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="@dimen/button_size"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/textPrimaryDark"
+                        android:text="@string/right"/>
+
+                    <ImageButton
+                        style="@style/square_button"
+                        android:src="@drawable/arrow_up"
+                        android:id="@+id/right_up"/>
+
+                    <ImageButton
+                        style="@style/square_stop_button"
+                        android:src="@drawable/stop"
+                        android:id="@+id/right_stop"
+                        />
+
+                    <ImageButton
+                        style="@style/square_button"
+                        android:src="@drawable/arrow_down"
+                        android:id="@+id/right_down"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

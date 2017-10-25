@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ROD of steel</string>
+    <string name="connect_to_arduino">Connect to Arduino</string>
+
+    <!-- activity_connect -->
+    <string name="ip">IP</string>
+    <string name="port">Port</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="continue_without_connecting">Continue</string>
+
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="slope">Slope</string>
+    <string name="toggle_joystick">Joy control</string>
+    <string name="led">Led</string>
+</resources>

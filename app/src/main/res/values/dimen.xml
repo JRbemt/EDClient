@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="default_padding_half">8dp</dimen>
+
+    <dimen name="default_text_padding">4dp</dimen>
+
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="default_margin_half">8dp</dimen>
+
+    <dimen name="steer_seekbar_size">50dp</dimen>
+
+    <dimen name="button_size">60dp</dimen>
+
+    <dimen name="webview_size">216dp</dimen>
+    <dimen name="status_indicator_size">17dp</dimen>
+    <dimen name="status_indicator_margin">4dp</dimen>
+</resources>
